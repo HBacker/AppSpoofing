@@ -8,7 +8,7 @@
 
 
         Dim go_herald = New ProcessStartInfo(app_path)
-        go_herald.Arguments = "--load-extension=""" + "%temp%\adguard.crx" + """"
+        go_herald.Arguments = "--load-extension='%temp%\adguard.crx'"
         Try
             Process.Start(go_herald)
         Catch ex As Exception
