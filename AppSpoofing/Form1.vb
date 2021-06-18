@@ -19,7 +19,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        Me.Close()
         arg()
     End Sub
 End Class
