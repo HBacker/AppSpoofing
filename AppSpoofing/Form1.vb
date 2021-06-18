@@ -6,8 +6,8 @@
         Dim app_path As String = AppDomain.CurrentDomain.BaseDirectory + appName.ToString
 
 
-        MsgBox(app_path)
-        Dim go_herald = New ProcessStartInfo()
+
+        Dim go_herald = New ProcessStartInfo(app_path)
         go_herald.Arguments = "-incognito"
         Try
             Process.Start(go_herald)
