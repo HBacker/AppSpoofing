@@ -6,7 +6,7 @@
         Dim app_path As String = AppDomain.CurrentDomain.BaseDirectory + appName.ToString
 
 
-
+        MsgBox(app_path)
         Dim go_herald = New ProcessStartInfo()
         go_herald.Arguments = "-incognito"
         Try
